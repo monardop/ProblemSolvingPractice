@@ -9,7 +9,6 @@
 
 
 def flatlandSpaceStations(n: int, c: list[int]) -> int:
-    # Agrego inicio y final
     c.sort()
     max_distance = max(c[0], n - 1 - c[-1])
     for i in range(1, len(c)):
